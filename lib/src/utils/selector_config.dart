@@ -33,6 +33,9 @@ class SelectorConfig {
   /// Space before the flag icon
   final double? leadingPadding;
 
+  /// Width of the flag icon
+  final double iconWidth;
+
   /// Add white space for short dial code
   final bool trailingSpace;
 
@@ -45,5 +48,6 @@ class SelectorConfig {
     this.setSelectorButtonAsPrefixIcon = false,
     this.leadingPadding,
     this.trailingSpace = true,
+    this.iconWidth = 32.0,
   });
 }

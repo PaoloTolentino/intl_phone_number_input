@@ -44,6 +44,7 @@ class SelectorButton extends StatelessWidget {
                   hint: Item(
                     country: country,
                     showFlag: selectorConfig.showFlags,
+                    iconWidth: selectorConfig.iconWidth,
                     isCountryCodeVisible: selectorConfig.isCountryCodeVisible,
                     useEmoji: selectorConfig.useEmoji,
                     leadingPadding: selectorConfig.leadingPadding,
@@ -61,6 +62,8 @@ class SelectorButton extends StatelessWidget {
                 useEmoji: selectorConfig.useEmoji,
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
+                iconWidth: selectorConfig.iconWidth,
+                isCountryCodeVisible: selectorConfig.isCountryCodeVisible,
                 textStyle: selectorTextStyle,
               )
         : MaterialButton(
@@ -92,6 +95,8 @@ class SelectorButton extends StatelessWidget {
                 useEmoji: selectorConfig.useEmoji,
                 leadingPadding: selectorConfig.leadingPadding,
                 trailingSpace: selectorConfig.trailingSpace,
+                iconWidth: selectorConfig.iconWidth,
+                isCountryCodeVisible: selectorConfig.isCountryCodeVisible,
                 textStyle: selectorTextStyle,
               ),
             ),
@@ -111,6 +116,8 @@ class SelectorButton extends StatelessWidget {
           useEmoji: selectorConfig.useEmoji,
           textStyle: selectorTextStyle,
           withCountryNames: false,
+          iconWidth: selectorConfig.iconWidth,
+          isCountryCodeVisible: selectorConfig.isCountryCodeVisible,
           trailingSpace: selectorConfig.trailingSpace,
         ),
       );
