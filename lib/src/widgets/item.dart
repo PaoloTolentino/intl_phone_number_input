@@ -9,6 +9,7 @@ class Item extends StatelessWidget {
   final bool? useEmoji;
   final TextStyle? textStyle;
   final bool withCountryNames;
+  final bool isCountryCodeVisible;
   final double? leadingPadding;
   final bool trailingSpace;
 
@@ -19,6 +20,7 @@ class Item extends StatelessWidget {
     this.useEmoji,
     this.textStyle,
     this.withCountryNames = false,
+    this.isCountryCodeVisible = false,
     this.leadingPadding = 12,
     this.trailingSpace = true,
   }) : super(key: key);
@@ -40,12 +42,14 @@ class Item extends StatelessWidget {
             showFlag: showFlag,
             useEmoji: useEmoji,
           ),
-          SizedBox(width: 12.0),
-          Text(
-            '$dialCode',
-            textDirection: TextDirection.ltr,
-            style: textStyle,
-          ),
+          if (isCountryCodeVisible) ...[
+            SizedBox(width: 12.0),
+            Text(
+              '$dialCode',
+              textDirection: TextDirection.ltr,
+              style: textStyle,
+            ),
+          ],
         ],
       ),
     );

@@ -16,6 +16,9 @@ class SelectorConfig {
   /// and list items within the selector
   final bool showFlags;
 
+  /// [isCountryCodeVisible], displays country dial code along side countries info on selector button
+  final bool isCountryCodeVisible;
+
   /// [useEmoji], uses emoji flags instead of png assets
   final bool useEmoji;
 
@@ -36,6 +39,7 @@ class SelectorConfig {
   const SelectorConfig({
     this.selectorType = PhoneInputSelectorType.DROPDOWN,
     this.showFlags = true,
+    this.isCountryCodeVisible = true,
     this.useEmoji = false,
     this.countryComparator,
     this.setSelectorButtonAsPrefixIcon = false,

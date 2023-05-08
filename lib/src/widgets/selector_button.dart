@@ -44,6 +44,7 @@ class SelectorButton extends StatelessWidget {
                   hint: Item(
                     country: country,
                     showFlag: selectorConfig.showFlags,
+                    isCountryCodeVisible: selectorConfig.isCountryCodeVisible,
                     useEmoji: selectorConfig.useEmoji,
                     leadingPadding: selectorConfig.leadingPadding,
                     trailingSpace: selectorConfig.trailingSpace,
